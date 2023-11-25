@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css
+    ">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <!-- accordian -->
+    <main class="blog">
+      <div class="container ms-auto">
+
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h3>Discuss the scope of var, let, and const
+                </h3> 
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>var variable is functional scope.let variable is block scope. The scope of a const variable is block scope. It can be updated and re-declared into the scope
+
+                  var variable:function add() {
+                    var x = 10;
+                    if (true) {
+                      var x = 20; 
+                    }
+                    console.log(x); 
+                  }
+                 var variable you can re assain
+                  var age=10;
+                  age=11;
+                  console.log(age)
+
+                  let variable: functionadd() {
+                    let y = 10;
+                    if (true) {
+                      let y = 20; 
+                    }
+                    console.log(y); 
+                  }
+                  let variable you can re assain
+                  var age=10;
+                  age=11;
+                  console.log(age)
+                  cnost variable:
+                  const name='sam';
+                  console.log(name);
+                  
+                </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <h3>Tell us the use cases of null and undefined
+                </h3> 
+
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>null and undefined are both  values in JavaScript but they are used in  different contexts.
+                  null:
+                  When you want to explicitly indicate that a variable or object has no value or is empty you can assign it the value null.
+                  If you want to clear the value of a variable or object you can set it to null.
+                  
+                  let myVar = null;
+                  let obj = null;
+                  
+                   Using null to reset
+                  let tempVar = "some value";
+                  tempVar = null;
+
+                  undefined:
+                 When you declare a variable but don't assign any value to it, it automatically gets the value undefined.
+                  
+                  
+                  function add(param) {
+                    console.log(param);
+                  }
+                  
+                  let result = add(); 
+                   result is undefined
+                  </p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <h3>What do you mean by REST API?
+                </h3> 
+
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>REST stands for Representational State Transfer and it is an architectural style for designing networked applications. RESTful API resources are the key abstractions. These resources can be entities like users,  git init
+                  products, or any other concept that the API exposes. The common CRUD operations map to HTTP methods as follows web development building using this way systems, allowing different clients  as web browser, mobile devices, or other servers to interact with server resource</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js
+    "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="third.js"></script>
+</body>
+</html>

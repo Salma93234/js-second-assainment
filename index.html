@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHero</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body class="container">
+<header>
+    <!-- navber -->
+<div class="nav-container">
+    <img src="Logo.png" alt="">
+    <button class="sort-btn">Sort by view</button>
+    <button id="blog-button" class="blog-btn"><a target="_blank" href=""></a>Blog</button>
+</div>
+<hr class="break w-75">
+<!-- All Button -->
+<div onclick="loadData()" id="para"></div>
+
+<div id="btn-container" class="all-btn">
+    
+    <button onclick="loadData()" class="blog-btn">All</button>
+    <button id="music-button" onclick="musicData()" class="sort-btn">Music</button>
+    <button id="comedy-button" onclick="comedyButton()" class="sort-btn">Comedy</button>
+    <button id="drawing-button" onclick="drawingButton()" class="sort-btn">Drawing</button>
+</div>
+</header>
+
+<div id="container"></div>
+<main>
+    <!-- card section -->
+    <!-- <div id="video-details-container"></div> -->
+        <div id="card-section"></div>
+        
+</main>
+
+    <!-- script js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="first.js"></script>
+</body>
+</html>
